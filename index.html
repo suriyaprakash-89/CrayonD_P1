@@ -104,15 +104,17 @@
           <h1 class="headingfont">Watch our Actions</h1>
         </div>
         <div class="container" id="video_div">
-          <iframe id="video"
-          width="100%"
-          height="450"
-          src="https://www.youtube.com/embed/Nx4HDJ-TZn4?si=yK5YQU42fvrwcRLz"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen>
+          <iframe
+            id="video"
+            width="100%"
+            height="450"
+            src="https://www.youtube.com/embed/Nx4HDJ-TZn4?si=yK5YQU42fvrwcRLz"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          >
           </iframe>
           <h4 id="video_footer">Video Title display here</h4>
         </div>
@@ -486,6 +488,9 @@
             </div>
           </div>
         </div>
+        <div class="cont_unfilled">
+          <div class="cont_filled" id="filled1"></div>
+        </div>
       </div>
       <div id="page_7">
         <div id="page_7_head">
@@ -507,7 +512,8 @@
             <img src="./imgs/deal2.png" alt="" />
             <h4 class="d_head">Free Retirement Planning with 200+ Credits!</h4>
             <p class="d_para">
-              Claim a complimentary retirement planning session towards a secure and stress-free future today!
+              Claim a complimentary retirement planning session towards a secure
+              and stress-free future today!
             </p>
             <a class="d_explore"
               >Learn More <img src="./imgs/right-arrow.png" alt=""
@@ -528,7 +534,8 @@
             <img src="./imgs/deal2.png" alt="" />
             <h4 class="d_head">Free Retirement Planning with 200+ Credits!</h4>
             <p class="d_para">
-              Claim a complimentary retirement planning session towards a secure and stress-free future today!
+              Claim a complimentary retirement planning session towards a secure
+              and stress-free future today!
             </p>
             <a class="d_explore"
               >Learn More <img src="./imgs/right-arrow.png" alt=""
@@ -549,12 +556,16 @@
             <img src="./imgs/deal2.png" alt="" />
             <h4 class="d_head">Free Retirement Planning with 200+ Credits!</h4>
             <p class="d_para">
-              Claim a complimentary retirement planning session towards a secure and stress-free future today!
+              Claim a complimentary retirement planning session towards a secure
+              and stress-free future today!
             </p>
             <a class="d_explore"
               >Learn More <img src="./imgs/right-arrow.png" alt=""
             /></a>
           </div>
+        </div>
+        <div class="cont_unfilled">
+          <div class="cont_filled" id="filled2"></div>
         </div>
       </div>
     </div>
@@ -638,7 +649,17 @@
       </div>
     </div>
     <script>
-      
+      function scrollfun(continerbox,widthdiv){
+            const {scrollLeft,scrollWidth,clientWidth }=continerbox;
+            const scrollpre= Math.ceil(( scrollLeft / (scrollWidth - clientWidth)) * 100);
+            widthdiv.style.width=`${scrollpre}%`;
+        }
+        const progressBar = document.querySelector("#filled1");
+        const scrollCon = document.querySelector("#cards");
+        const progressBar1 = document.querySelector("#filled2");
+        const scrollCon1 = document.querySelector("#deals");
+        scrollCon1.addEventListener('scroll',function(){scrollfun(scrollCon1,progressBar1)});
+        scrollCon.addEventListener('scroll',function(){scrollfun(scrollCon,progressBar)});
     </script>
   </body>
 </html>
