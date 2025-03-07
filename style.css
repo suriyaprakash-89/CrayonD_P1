@@ -45,14 +45,19 @@
     margin-right: 1px;
     font-family: Poppins;
     margin-top: 8px;
+    transition: transform 0.3s ease-in-out;
   }
   margin-left: 50px;
 }
 a:hover {
   color: #f8971f !important;
 }
+#nav_links a:hover {
+  color: #f8971f !important;
+  transform: translateY(-10px);
+}
 a:hover svg {
-  fill: #f8971f !important; 
+  fill: #f8971f !important;
 }
 #nav_btn {
   display: flex;
