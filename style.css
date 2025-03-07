@@ -1,9 +1,14 @@
 #web_page {
   display: block;
+  justify-content: center;
+  align-items: center;
 }
 #page_1 {
   background-image: linear-gradient(80deg, #f8f4f1, #ecf1ff);
   height: 788px;
+}
+#logo {
+  margin-left: 1rem;
 }
 .headfont {
   font-family: "popins", sans-serif;
@@ -15,7 +20,8 @@
   font-weight: 600;
 }
 #off_whole {
-  margin-top: 10%;
+  margin-top: 100%;
+  justify-content: center;
 }
 #nav_bar {
   background-color: white;
@@ -23,12 +29,15 @@
   padding: 20px;
   position: fixed;
   z-index: 1;
+  height: 80px;
   width: 100%;
+  justify-content: center;
+  text-align: center;
+  gap: 190px;
 }
 #nav_links {
   display: flex;
-  gap: 32px;
-  margin-left: 250px;
+  gap: 40px;
   a {
     text-decoration: none;
     color: rgb(105, 101, 101);
@@ -37,17 +46,18 @@
     font-family: Poppins;
     margin-top: 8px;
   }
+  margin-left: 50px;
 }
-a:hover{
+a:hover {
   color: #f8971f !important;
 }
-#logo {
-  margin-left: 80px;
+a:hover svg {
+  fill: #f8971f !important; 
 }
 #nav_btn {
   display: flex;
   gap: 10px;
-  margin-left: 230px;
+  padding-left: 15px;
 }
 #off_header {
   width: 500px;
@@ -87,23 +97,25 @@ a:hover{
 }
 #off_div {
   display: flex;
+  justify-content: center;
+  padding-top: 100px;
 }
 #off_div_2 {
   margin-top: 100px;
 }
-#video_div{
-  background-color: #0D1226;
+#video_div {
+  background-color: #0d1226;
   width: 1020px;
   height: 525px;
   border-radius: 12px;
   padding: 0;
 }
-#video{
+#video {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
-#video_footer{
-  color: #FFFFFF;
+#video_footer {
+  color: #ffffff;
   font-size: 20px;
 }
 #page_2_head {
@@ -117,7 +129,6 @@ a:hover{
 }
 #video_footer {
   position: absolute;
-  z-index: 1;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   height: 80px;
@@ -163,7 +174,7 @@ a:hover{
 }
 #page_4 {
   background-image: url("./imgs/Light\ Mode\ -\ 1.png");
-  height: 100vh;
+  height: 600px;
 }
 #advs {
   display: flex;
@@ -255,6 +266,12 @@ a:hover{
   display: flex;
   height: 200px;
 }
+.steps {
+  margin-bottom: 1.5rem;
+}
+.step {
+  padding-bottom: 1rem;
+}
 #header_5 {
   margin-top: 150px;
 }
@@ -280,10 +297,20 @@ a:hover{
   gap: 40px;
 }
 #adv_pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 10px;
+  padding-left: 3rem;
+  width: auto;
 }
 #page_5 {
   margin-bottom: 100px;
+}
+.page_5 {
+  display: block;
+  justify-content: center;
+  align-items: center;
 }
 .cards {
   height: 354px;
@@ -323,7 +350,7 @@ a:hover{
   position: relative;
   margin-bottom: 30px;
   min-width: 290px;
-  margin-top:50px;
+  margin-top: 50px;
 }
 #cards {
   display: flex;
@@ -346,14 +373,17 @@ a:hover{
 #page_6_head {
   text-align: center;
 }
-#page_6{
+#page_6 {
   margin-bottom: 100px;
 }
-#footer{
+#footer {
   background-color: #0d1226;
   width: 100%;
 }
-
+.f_head {
+  color: #ecf1fb;
+  font-size: 1.1rem;
+}
 .footer {
   background-color: #0d1226;
   height: 586px;
@@ -384,8 +414,10 @@ a:hover{
   margin-top: 13px;
 }
 .section_2 {
-  width: 285px;
-  height: 169px;
+  margin-left: 100px;
+  width: 233px;
+  height: 162px;
+  margin-top: 100px;
 }
 .r_2 a {
   text-decoration: none;
@@ -399,7 +431,7 @@ a:hover{
   color: #ffffff;
   font-size: 16px;
 }
-.r_2{
+.r_2 {
   margin-bottom: 25px;
 }
 .r_1 {
@@ -437,25 +469,25 @@ a:hover{
   margin-left: 30px;
   font-size: 12px;
 }
-#page_7{
+#page_7 {
   width: 100%;
   height: 700px;
-  background-color: #F7F9FF;
+  background-color: #f7f9ff;
   padding-top: 90px;
 }
-#deals{
+#deals {
   display: flex;
-  gap:20px;
+  gap: 20px;
   width: 80%;
   overflow-x: scroll;
   scrollbar-width: none;
 }
-.deals{
+.deals {
   width: 450px;
 }
-.d_head{
+.d_head {
   padding-top: 20px;
-  font-family: "popins",sans-serif;
+  font-family: "popins", sans-serif;
   font-weight: 600;
   font-style: bold;
   font-size: 20px;
@@ -463,27 +495,27 @@ a:hover{
   letter-spacing: 0%;
   vertical-align: middle;
 }
-#page_7_head{
+#page_7_head {
   text-align: center;
   margin-bottom: 100px;
 }
-.d_explore{
-    text-decoration: none;
-    color: #5978FF;
+.d_explore {
+  text-decoration: none;
+  color: #5978ff;
 }
-.d_para{
+.d_para {
   padding-top: 10px;
 }
-.cont_unfilled{
+.cont_unfilled {
   width: 100px;
   height: 5px;
   border-radius: 4px;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   margin: 30px auto;
 }
-.cont_filled{
+.cont_filled {
   width: 0%;
   height: 5px;
   border-radius: 4px;
-  background-color: #0D1226;
+  background-color: #0d1226;
 }
